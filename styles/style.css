@@ -9,7 +9,7 @@
     --memoryFont: #f1bf63;
     --verbalMain: #f2fafa;
     --verbalFont: #35a086;
-    --visualHigh: #f3f3fd;
+    --visualMain: #f3f3fd;
     --visualFont: #505dad;
 
     --generalResultFont: #383d53;
@@ -42,11 +42,10 @@ p{
 }
 .grid{
     display: grid;
-    grid-template-columns: 40% 60%;
-    column-gap: 2rem;
+    grid-template-columns: 47% 53%;
     box-shadow: 10px 10px 10px 0px #f5f8ff;
     border-radius: 2.2rem;
-    width: 60rem;
+    max-width: 50rem;
     margin: 10% auto;
 }
 
@@ -63,7 +62,7 @@ p{
     opacity: 80%;
     font-size: 1.7rem;
     font-weight: normal;
-    margin-top: 0.2rem;
+    margin-top: 0;
     margin-bottom: 2rem;
     
 }
@@ -74,8 +73,8 @@ p{
     margin: auto;
     background-image: linear-gradient(to bottom, var(--circlehigh) 0%, var(--circleLow) 100%);
     border-radius: 50%;
-    width: 13rem;
-    height: 13rem;
+    width: 14rem;
+    height: 14rem;
     
 }
 .results__score p{
@@ -89,12 +88,76 @@ p{
     color: var(--white);
 }
 .results__grade{
-    margin-top: 1.8rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
     font-size: 2rem;
     font-weight: bold;
 }
 .results__note{
     font-size: 1.2rem;
     color: #ffffffc2;
+}
+
+/*Sumary section*/
+.sumary{
+    padding: 3rem;
+    font-weight: bold;
+}
+.sumary h2{
+    font-size: 1.9rem;
+    margin: 0;
+    margin-bottom: 1.4rem;
+}
+.sumary__attribute{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--button);
+}
+.sumary__attribute div{
+    display: flex;
+}
+.sumary__attribute img{
+    width: 1.6rem;
+    margin-right: 1rem;
+}
+
+/*Customizing each container*/
+.reaction{
+    background-color: var(--reactionMain);
+}
+.reaction div{
+    color: var(--reactionFont);
+}
+.memory{
+    background-color: var(--memoryMain);
+}
+.memory div{
+    color: var(--memoryFont);
+}
+.verbal{
+    background-color: var(--verbalMain);
+}
+.verbal div{
+    color: var(--verbalFont);
+}
+.visual{
+    background-color: var(--visualMain);
+}
+.visual div{
+    color: var(--visualFont);
+}
+
+/*Button*/
+.button{
+    width: 100%;
+    padding: 1.1rem;
+    margin-top: 1.2rem;
+    border: none;
+    border-radius: 9rem;
+    background-color: var(--button);
+    color: var(--white);
 }
