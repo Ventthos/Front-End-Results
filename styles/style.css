@@ -1,0 +1,100 @@
+:root{
+    --squareHigh: #6541fd;
+    --squareLow: #342cea;
+    --circlehigh: #4a24cf;
+    --circleLow: #4734f0;
+    --reactionMain: #fff6f5;
+    --reactionFont: #d27a7a;
+    --memoryMain: #fffbf2;
+    --memoryFont: #f1bf63;
+    --verbalMain: #f2fafa;
+    --verbalFont: #35a086;
+    --visualHigh: #f3f3fd;
+    --visualFont: #505dad;
+
+    --generalResultFont: #383d53;
+    --generalLow: #989aa7;
+    --white: #fff;
+
+    --button: #303b59;
+    
+}
+@font-face {
+    font-family: Hanken;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/* Globals*/
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Hanken;
+}
+p{
+    margin: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 2rem;
+    box-shadow: 10px 10px 10px 0px #f5f8ff;
+    border-radius: 2.2rem;
+    width: 60rem;
+    margin: 10% auto;
+}
+
+/*Results section*/
+.results{
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--squareHigh) 0%, var(--squareLow) 100%);
+    padding: 3.2rem;
+    border-radius: 2.2rem;
+    text-align: center;
+    color: var(--white);
+}
+.results h2{
+    opacity: 80%;
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    
+}
+.results__score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: linear-gradient(to bottom, var(--circlehigh) 0%, var(--circleLow) 100%);
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+    
+}
+.results__score p{
+    color: #ffffff90;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+.results__score p span{
+    font-size: 4.4rem;
+    font-weight: bold;
+    color: var(--white);
+}
+.results__grade{
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.results__note{
+    font-size: 1.2rem;
+    color: #ffffffc2;
+}
