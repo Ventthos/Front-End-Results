@@ -103,8 +103,14 @@ p{
     font-weight: bold;
 }
 .results__note{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    
     color: #ffffffc2;
+}
+@media (min-width: 768px) {
+    .results__note{
+        font-size: 1.3rem;
+    }
 }
 
 /*Sumary section*/
