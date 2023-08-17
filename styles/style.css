@@ -26,6 +26,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    margin: 0;
 }
 *, *::before, *::after{
     box-sizing: inherit;
@@ -36,27 +37,36 @@ body{
     font-size: 16px;
     line-height: 1.5;
     font-family: Hanken;
+    margin: 0;
 }
 p{
     margin: 0;
 }
 .grid{
-    display: grid;
-    grid-template-columns: 47% 53%;
-    box-shadow: 10px 10px 10px 0px #f5f8ff;
-    border-radius: 2.2rem;
     max-width: 50rem;
-    margin: 10% auto;
 }
-
+@media (min-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 47% 53%;
+        box-shadow: 10px 10px 10px 0px #f5f8ff;
+        margin: 10% auto;
+        border-radius: 2.2rem;
+    }
+}
 /*Results section*/
 .results{
     width: 100%;
     background-image: linear-gradient(to bottom, var(--squareHigh) 0%, var(--squareLow) 100%);
-    padding: 3.2rem;
-    border-radius: 2.2rem;
+    padding: 3.1rem;
+    border-radius: 0 0 2.2rem 2.2rem;
     text-align: center;
     color: var(--white);
+}
+@media (min-width: 768px) {
+    .results{
+        border-radius: 2.2rem;
+    }
 }
 .results h2{
     opacity: 80%;
@@ -64,7 +74,6 @@ p{
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 2rem;
-    
 }
 .results__score{
     display: flex;
@@ -94,7 +103,7 @@ p{
     font-weight: bold;
 }
 .results__note{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #ffffffc2;
 }
 
@@ -161,3 +170,7 @@ p{
     background-color: var(--button);
     color: var(--white);
 }
+.button:hover{
+    background-image: linear-gradient(to bottom, var(--squareHigh) 0%, var(--squareLow) 100%);
+}
+
